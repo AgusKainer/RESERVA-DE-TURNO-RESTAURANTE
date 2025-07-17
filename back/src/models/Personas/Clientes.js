@@ -3,8 +3,8 @@ const db = require("../../db/conectionDB");
 
 const Clientes = db.define("Clientes", {
   id: {
-    type: DataTypes.UUIDV4,
-    defaultValue: DataTypes.UUID,
+    type: DataTypes.UUID,
+    defaultValue: DataTypes.UUIDV4,
     primaryKey: true,
   },
   nombre: {
@@ -18,7 +18,7 @@ const Clientes = db.define("Clientes", {
     },
   },
   telefono: {
-    type: DataTypes.NUMBER,
+    type: DataTypes.INTEGER,
     allowNull: false,
   },
 });

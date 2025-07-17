@@ -3,8 +3,8 @@ const db = require("../../db/conectionDB");
 
 const Admin = db.define("Admin", {
   id: {
-    type: DataTypes.UUIDV4,
-    defaultValue: DataTypes.UUID,
+    type: DataTypes.UUID,
+    defaultValue: DataTypes.UUIDV4,
     primaryKey: true,
   },
   nombre: {

@@ -3,8 +3,8 @@ const db = require("../../db/conectionDB");
 
 const Reservas = db.define("Reservas", {
   id: {
-    type: DataTypes.UUIDV4,
-    defaultValue: DataTypes.UUID,
+    type: DataTypes.UUID,
+    defaultValue: DataTypes.UUIDV4,
     primaryKey: true,
   },
   cliente_id: {
@@ -26,7 +26,7 @@ const Reservas = db.define("Reservas", {
     allowNull: false,
   },
   cantidada_personas: {
-    type: DataTypes.NUMBER,
+    type: DataTypes.INTEGER,
     allowNull: false,
   },
   estado: {

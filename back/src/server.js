@@ -6,7 +6,7 @@ const server = async () => {
   try {
     app.listen(port);
     console.log(`SERVER FUNCIONANDO EN EL PUERTO ${port}`);
-    await db.authenticate();
+    await db.sync({ force: true });
     console.log("CONEXION A LA DB CON EXITO");
   } catch (error) {
     console.log(`ERROR AL LEVANTAR EL SERVER: ${error}`);
