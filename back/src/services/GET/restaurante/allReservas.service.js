@@ -1,4 +1,4 @@
-const { Reservas } = require("../../models/index.model");
+const { Reservas } = require("../../../models/index.model");
 
 const allReservas = async () => {
   return await Reservas.findAll();

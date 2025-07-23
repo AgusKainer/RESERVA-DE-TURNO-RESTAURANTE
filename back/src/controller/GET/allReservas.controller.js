@@ -1,4 +1,4 @@
-const allReservas = require("../../services/GET/allReservas.services");
+const allReservas = require("../../services/GET/restaurante/allReservas.service");
 
 const allReservasController = async (req, res) => {
   try {
