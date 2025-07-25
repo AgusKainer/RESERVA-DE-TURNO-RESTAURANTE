@@ -26,4 +26,5 @@ const createReservaController = async (req, res) => {
 module.exports = createReservaController;
 
 // "b44a0dce-b38e-45bf-88d0-cd017e69a5e0" id mesa
+// "7c3df64b-f308-4731-b01e-828cb6281e62" id otra mesa
 // "27cfaffb-64d5-4ed8-98a2-f3b02d3c803f" id cliente
