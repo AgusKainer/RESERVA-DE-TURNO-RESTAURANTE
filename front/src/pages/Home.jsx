@@ -2,6 +2,7 @@ import { ClienteForm } from "../components/ClienteForm";
 import ClientList from "../components/ClientList";
 import MesaForm from "../components/MesaForm";
 import MesaList from "../components/MesaList";
+import { ReservaList } from "../components/ReservaList";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <ClientList />
       <MesaForm />
       <MesaList />
+      <ReservaList />
     </div>
   );
 }
